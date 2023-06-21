@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
- * main - print _putchar
- * is written by embe
- * Return: 0
- */
+  * main - prints some text with _putchar function
+  * Return: returns 0 with success
+  */
+
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
-}
+	char *putchar;
 
+	for (putchar = "_putchar\n"; *putchar != '\0'; putchar++)
+		_putchar(*putchar);
+
+	return (0);
+
+}
